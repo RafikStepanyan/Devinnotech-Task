@@ -6,7 +6,6 @@ import { fetchCategories, fetchCats, fetchLoadMore } from '../../redux/dataAPI';
 export const Home = () => {
     const data = useSelector(state => state);
     const dispatch = useDispatch();
-    console.log(data);
 
     useEffect(() => {
         dispatch(fetchCats());
