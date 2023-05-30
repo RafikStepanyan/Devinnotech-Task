@@ -1,0 +1,27 @@
+.sidebar {
+  background: #0a1929;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  h2 {
+    color: gray;
+    transition: 0.5s;
+    &:hover {
+      cursor: pointer;
+      transition: 0.5s;
+      color: rgb(0, 183, 255);
+      text-decoration: 3px underline rgb(0, 183, 255);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    height: 15vh;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
